@@ -6,8 +6,9 @@ var app = builder.Build();
 
 
 // Routes for the endpoint
-app.MapGet("/", () => "Hello World!");
-
+app.MapGet("/", () => "Home page");
+app.MapGet("/about", () => "About page");
+app.MapGet("/contact", () => "Contact page");
 
 
 // Run the application
