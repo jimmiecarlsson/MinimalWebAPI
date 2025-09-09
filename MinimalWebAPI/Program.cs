@@ -6,7 +6,6 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-app.UseStaticFiles();
 app.MapRazorPages();
 
 // Routes for the endpoints
@@ -18,7 +17,7 @@ app.MapRazorPages();
 //app.MapGet("/products/{category}/items/{id:int}", (string category, int id) => $"Product is of category: {category} with id: {id}");
 //app.MapGet("/{random}", (string random) => $"The page {random} does not exist." );
 
-app.MapGet("/", static () => Results.Redirect("/Index"));
+app.MapGet("/", () => Results.Redirect("/Index"));
 
 // Run the application
 app.Run();
