@@ -9,6 +9,7 @@ var app = builder.Build();
 app.MapGet("/", () => "Home page");
 app.MapGet("/about", () => "About page");
 app.MapGet("/contact", () => "Contact page");
+app.MapGet("/products/{category}", (string category) => $"Product is of category: {category}");
 
 
 // Run the application
