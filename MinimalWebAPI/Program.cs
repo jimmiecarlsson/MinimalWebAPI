@@ -1,5 +1,5 @@
 
-// WebApplication example for .NET 9.0
+// Create a builder with a instance of WebApplication
 using System.Runtime.CompilerServices;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +7,7 @@ var app = builder.Build();
 
 
 
-// Routes for the endpoint
+// Routes for the endpoints
 app.MapGet("/", () => "Home page");
 app.MapGet("/about", () => "About page");
 app.MapGet("/contact", () => "Contact page");
