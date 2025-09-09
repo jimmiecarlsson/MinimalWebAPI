@@ -2,6 +2,7 @@
 @model MinimalWebAPI.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -10,11 +11,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal Web API</title>
-
 </head>
-
 <body>
     <h1>Minimal Web API</h1>
     <p>This is a minimal web API application.</p>
+    <p>@Model.Meddelande</p>
 </body>
 </html>
